@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Tetris</title>
+    <link rel="stylesheet" href="css/tetris.css">
+</head>
+<body>
+
+<!-- Menu Utama -->
+<div id="menu" class="menu">
+    <h1>Game Tetris</h1>
+    <button id="new-game-btn">New Game</button>
+    <button id="continue-btn" style="display: none;">Continue</button>
+    <button id="options-btn">Options</button>
+    <a href="index.html" class="btn level-btn">kembali ke beranda</a>
+</div>
+
+<!-- Opsi Level -->
+<div id="options-menu" class="menu" style="display: none;">
+    <h2>Options</h2>
+    <button class="level-btn" data-level="easy">Easy</button>
+    <button class="level-btn" data-level="medium">Medium</button>
+    <button class="level-btn" data-level="hard">Hard</button>
+</div>
+
+<!-- Canvas untuk Game -->
+<canvas id="tetris" width="300" height="600" style="display: none;"></canvas>
+
+<script src="js/tetris.js"></script>
+</body>
+</html>
